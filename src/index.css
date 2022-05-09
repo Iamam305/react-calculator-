@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0%;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: url('https://wallpaperaccess.com/full/812553.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #cccccc;
+
+}
+
+.calculator_parent {
+
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10px;
+  background: #ffffff1b;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #113f3d;
+
+}
+
+.calculator div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+.display_result{
+  justify-content: flex-end !important;
+  padding: 30px;
+}
+
+button {
+  width: 30%;
+  padding: 20px;
+  background: transparent;
+  color: #113f3d;
+  border: 4px solid #113f3d;
+  border-radius: 10px;
+  margin: 5px 0px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 900;
+
+}
+
+
+.digits button{
+  color: #ddec9b;
+  border: 3px solid #ddec9b;
+
+
 }
